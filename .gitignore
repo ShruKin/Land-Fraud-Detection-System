@@ -132,3 +132,5 @@ dmypy.json
 # personal
 creds.py
 .vscode/
+stanford-ner-2018-10-16/
+outfiles/
