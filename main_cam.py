@@ -3,7 +3,11 @@ import creds
 import ocr
 import cv2
 import numpy as np
+import os
 
+
+if not os.path.exists('outfiles'):
+    os.makedirs('outfiles')
 
 
 # instantaneous auto-focused capture URL

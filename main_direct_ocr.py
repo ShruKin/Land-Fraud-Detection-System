@@ -1,4 +1,9 @@
 import ocr
+import os
+
+
+if not os.path.exists('outfiles'):
+    os.makedirs('outfiles')
 
 image_file = r'outfiles\image.jpg'
 
