@@ -13,7 +13,7 @@ url_af = f'http://{creds.username}:{creds.password}@{creds.ip}/photoaf.jpg'
 capture = cv2.VideoCapture(f'http://{creds.username}:{creds.password}@{creds.ip}/video')
 
 # .jpg image file name
-image_file = 'image.jpg'
+image_file = r'outfiles\image.jpg'
 
 
 
@@ -36,7 +36,7 @@ while True:
         text = ocr.run_ocr(image_file)
 
         print(text)
-        with open('infile.txt', 'w') as f:
+        with open(r'outfiles\infile.txt', 'w') as f:
             f.write(text)
 
 
