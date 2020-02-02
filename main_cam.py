@@ -31,9 +31,14 @@ while True:
         r = requests.get(url_af)
         with open(image_file, 'wb') as f:
             f.write(r.content)
+            
         ocr.filter_image(image_file, False)
         text = ocr.run_ocr(image_file)
+
         print(text)
+        with open('infile.txt', 'w') as f:
+            f.write(text)
+
 
     if k == 27: # ESC Key is pressed
         break
